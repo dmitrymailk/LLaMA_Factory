@@ -1,0 +1,26 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile_nvidia"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-python.black-formatter",
+                "njpwerner.autodocstring",
+                "deckerio.breakpointio",
+                "ms-vscode.cpptools-extension-pack",
+                "magicstack.MagicPython",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "donjayamanne.python-environment-manager"
+            ]
+        }
+    },
+    "runArgs": [
+        "--network=host"
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/code,type=bind",
+    "workspaceFolder": "/code",
+    "mounts": []
+}
